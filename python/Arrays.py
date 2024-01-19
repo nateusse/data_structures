@@ -1,5 +1,11 @@
 arr = [1,2,3,4,5]
-print(arr)
+print("con print: ", arr)
 
-for element in arr: print(element)
+print("con enhance loop: ")
+for element in arr: print(element,end=' ')
+
+double =[ [1,2],[3,4], [5,6] ]
+print("Double aray: ",double)
+
+
 
