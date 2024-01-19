@@ -1,6 +1,6 @@
 package java_dsa;
 
-public class ArraysDSA {
+public class ArrayTheory {
     
     /* Print with for loo nested or method  */
     static void arrayMethod(){
