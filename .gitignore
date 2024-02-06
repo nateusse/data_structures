@@ -1,3 +1,6 @@
 #csharp
 /csharp/obj/
 /csharp/bin/
+
+#IDE
+.vscode/
