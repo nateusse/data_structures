@@ -14,3 +14,10 @@ for (let i = 0; i < arrr.length; i++){
     arrr[i] = arrr[i+1]
     console.log(arrr)
 }
+
+
+function solution(n) {
+    console.log(n.slice(0))
+    return "mami"
+  }
+console.log(solution(29))
