@@ -1,9 +1,20 @@
 """
-Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+Given an integer array nums sorted in non-decreasing 
+order, remove the duplicates in-place such that each 
+unique element appears only once. 
+The relative order of the elements should be kept 
+the same. Then return the number of unique elements 
+in nums.
 
-Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:
+Consider the number of unique elements of
+ nums to be k, to get accepted, 
+ you need to do the following things:
 
-    Change the array nums such that the first k elements of nums contain the unique elements in the order they were present in nums initially. The remaining elements of nums are not important as well as the size of nums.
+    Change the array nums such that the first k
+      elements of nums contain the unique elements 
+      in the order they were present in nums initially. 
+      The remaining elements of nums are not 
+      important as well as the size of nums.
     Return k.
 
 """
@@ -16,17 +27,14 @@ class RemoveDuplicates:
     def remove_duplicates(self, nums: list[int]) -> int:
         """
         Removes duplicates from the sorted array in-place such that each unique element appears only once.
-        
         Args:
-            nums (List[int]): A sorted list of integers.
-        
+            nums (List[int]): A sorted list of integers.     
         Returns:
             int: The number of unique elements in the array.
         """
         
         # Edge case: If nums is empty, return 0
-        if not nums:
-            return 0
+        if not nums: return 0
 
         # Pointer to the next unique position
         unique_index = 1
