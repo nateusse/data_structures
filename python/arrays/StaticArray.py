@@ -68,6 +68,23 @@ class StaticArray(Generic[T]):
             self.length -= 1
         else:
             raise IndexError("Array is empty")
+        
+    """
+    Removes element by index and shifts all elements to the left to overwrite the element
+    :param index: the index of the element to remove
+    """    
+        
+    def remove_middle(self, index):
+        if index < 0 or index >= self.length:
+            raise IndexError("Index out of range.")
+        
+        # Shift elements to the left starting from the specified index
+        for i in range(index, self.length - 1):
+            self.arr[i] = self.arr[i + 1]
+        
+        # Clear the last element and reduce the length
+        self.arr[self.length - 1] = None
+        self.length -= 1
 
     def get_length(self) -> int:
         """
