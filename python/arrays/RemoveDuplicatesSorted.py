@@ -19,12 +19,12 @@ Consider the number of unique elements of
 
 """
 
-class RemoveDuplicates:
+class RemoveDuplicatesSorted:
     """
     Class to remove duplicates from a sorted array in-place.
     """
     
-    def remove_duplicates(self, nums: list[int]) -> int:
+    def remove_duplicates_sorted(self, nums: list[int]) -> int:
         """
         Removes duplicates from the sorted array in-place such that each unique element appears only once.
         Args:
