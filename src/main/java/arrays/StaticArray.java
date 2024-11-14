@@ -100,7 +100,7 @@ public class StaticArray<T> {
         // Clear the last element and reduce the length
         arr[length - 1] = null;
         length--;
-    }
+}
 
     /**
      * Returns the current number of elements in the array.
