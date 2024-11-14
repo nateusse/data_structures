@@ -63,6 +63,9 @@ public class StaticArray<T> {
         if (index < 0 || index >= length) {
             throw new IndexOutOfBoundsException("Index out of range.");
         }
+        for (int i = length - 1; i > index - 1; i--) {
+            arr[index] = arr[index - 1];
+        }
         arr[index] = element;
     }
 
