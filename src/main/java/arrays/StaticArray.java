@@ -84,6 +84,25 @@ public class StaticArray<T> {
     }
 
     /**
+     * Removes an element at a specific index, shifting elements to fill the gap.
+     *
+     * @param index the index of the element to remove
+     * @throws IndexOutOfBoundsException if the index is out of range
+     */
+    public void removeMiddle(int index) {
+        if (index < 0 || index >= length) {
+            throw new IndexOutOfBoundsException("Index out of range.");
+        }
+        // Shift elements to the left starting from the specified index
+        for (int i = index; i < length - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+        // Clear the last element and reduce the length
+        arr[length - 1] = null;
+        length--;
+    }
+
+    /**
      * Returns the current number of elements in the array.
      *
      * @return the current number of elements
