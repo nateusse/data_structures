@@ -5,7 +5,7 @@ class Node:
         self.ref = None   # Reference to the next node (default is None)
 
 # Class representing a singly linked list
-class LinkedList:
+class SingleLinkedList:
     def __init__(self):
         self.head = None  # Initialize the linked list with no nodes (empty list)
 
