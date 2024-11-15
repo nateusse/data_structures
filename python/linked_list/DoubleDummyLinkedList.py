@@ -5,7 +5,7 @@ class ListNode:
         self.prev = None
 
 # Implementation for Doubly Linked List
-class LinkedList:
+class DoubleDummyLinkedList:
     def __init__(self):
         # Init the list with 'dummy' head and tail nodes which makes 
         # edge cases for insert & remove easier.

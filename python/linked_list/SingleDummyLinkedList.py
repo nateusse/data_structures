@@ -7,7 +7,7 @@ class ListNode:
         self.next = None     # Pointer to the next node in the list
 
 
-class LinkedList:
+class SingleDummyLinkedList:
     """
     Class representing a singly linked list with basic operations.
     """
