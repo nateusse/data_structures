@@ -1,5 +1,6 @@
 package linked_list;
 
+
 // Class representing a single node in a doubly linked list
 class ListNode {
     int val;           // Value of the node
@@ -91,30 +92,5 @@ public class DoubleDummyLinkedList {
         System.out.println("None"); // End of the list
     }
 
-    // Main method to test the doubly linked list
-    public static void main(String[] args) {
-        LinkedList dll = new LinkedList();
-
-        // Insert elements at the front
-        dll.insertFront(10);
-        dll.insertFront(20);
-
-        // Insert elements at the end
-        dll.insertEnd(5);
-        dll.insertEnd(1);
-
-        // Print the list
-        System.out.println("Initial list:");
-        dll.printList(); // Output: 20 -> 10 -> 5 -> 1 -> None
-
-        // Remove elements from the front and end
-        dll.removeFront();
-        System.out.println("\nAfter removing front:");
-        dll.printList(); // Output: 10 -> 5 -> 1 -> None
-
-        dll.removeEnd();
-        System.out.println("\nAfter removing end:");
-        dll.printList(); // Output: 10 -> 5 -> None
-    }
 }
 
