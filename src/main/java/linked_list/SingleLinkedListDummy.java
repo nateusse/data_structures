@@ -21,7 +21,7 @@ class ListNode {
 /**
  * Class representing a singly linked list with basic operations.
  */
-public class SingleDummyLinkedList {
+public class SingleLinkedListDummy {
     private ListNode head; // Dummy head node
     private ListNode tail; // Pointer to the last node
 
@@ -29,7 +29,7 @@ public class SingleDummyLinkedList {
      * Constructor to initialize the linked list.
      * Initializes the linked list with a dummy head node for easier operations.
      */
-    public SingleDummyLinkedList () {
+    public SingleLinkedListDummy () {
         head = new ListNode(-1); // Dummy head node
         tail = head;            // Tail points to the dummy node initially
     }
