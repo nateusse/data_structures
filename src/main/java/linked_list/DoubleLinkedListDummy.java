@@ -16,12 +16,12 @@ class ListNode {
 }
 
 // Class representing a doubly linked list
-public class DoubleDummyLinkedList {
+public class DoubleLinkedListDummy {
     private ListNode head;  // Dummy head node
     private ListNode tail;  // Dummy tail node
 
     // Constructor to initialize the doubly linked list with dummy nodes
-    public DoubleDummyLinkedList() {
+    public DoubleLinkedListDummy() {
         head = new ListNode(-1);  // Dummy head node
         tail = new ListNode(-1);  // Dummy tail node
         head.next = tail;         // Connect dummy head to dummy tail
