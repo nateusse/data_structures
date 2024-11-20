@@ -38,6 +38,20 @@ public class StaticArray<T> {
         }
     }
 
+    public void insertMiddle(int index, T element) {
+        if (index < 0 || index >= length) {
+            throw new IndexOutOfBoundsException("Index out of range.");
+        }
+        // Shift elements to the right starting from the specified index
+        for (int i = length; i > index; i--) {
+            arr[i] = arr[i - 1];
+        }
+        // Insert the new element at the specified index
+        arr[index] = element;
+        length++;
+        
+    }
+
     /**
      * Returns the element at a specific index.
      *
