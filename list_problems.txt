@@ -1,0 +1,11 @@
+""""""""""""""""" 101 """""""""""""""""""""""
+Area_triangle
+Chessboard - Black Square
+Fizz_Buzz 
+Sort_array_by_parity (https://leetcode.com/problems/sort-array-by-parity/)
+
+"""""""""""""""  102 """"""""""""""""""""""""""
+
+
+"""""""""""""""  301 """"""""""""""""""""""""""
+count_prime_numbers    (https://leetcode.com/problems/count-primes/)
